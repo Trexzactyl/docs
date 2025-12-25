@@ -39,5 +39,5 @@ step 3 again and make sure your settings are 100% correct and valid.
 
 > **Tip:**
 Congrats! Trexzactyl Discord Oauth should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.gg/trexzactyl).
+If you encounter any issues, please let us know on our [Discord](https://discord.gg/Uf59NRyYU9).
 

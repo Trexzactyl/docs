@@ -15,5 +15,5 @@ Then, paste this line and exit after:
 
 > **Tip:**
 Congrats! Renewals have been configured and should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.gg/trexzactyl).
+If you encounter any issues, please let us know on our [Discord](https://discord.gg/Uf59NRyYU9).
 

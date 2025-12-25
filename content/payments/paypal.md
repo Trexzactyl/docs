@@ -55,5 +55,5 @@ nano .env
 Head over to the Trexzactyl Storefront and click the 'Balance' tab. Once you're there, attempt to buy `x` credits with PayPal.
 If the page redirects to a PayPal purchase portal, congrats! You've successfully set up and configured PayPal.
 
-> **Tip:** If you run into issues while getting started with PayPal, let us know in the [Trexzactyl Discord](https://discord.gg/trexzactyl)
+> **Tip:** If you run into issues while getting started with PayPal, let us know in the [Trexzactyl Discord](https://discord.gg/Uf59NRyYU9)
 

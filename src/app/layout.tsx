@@ -9,6 +9,9 @@ const outfit = Outfit({ subsets: ["latin"], variable: '--font-outfit' });
 export const metadata: Metadata = {
   title: "Trexzactyl Documentation",
   description: "Modern documentation for Trexzactyl Panel",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

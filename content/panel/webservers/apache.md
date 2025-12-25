@@ -63,5 +63,5 @@ systemctl restart apache2
 
 > **Tip:**
 Congrats! Trexzactyl is installed and should be functioning normally.
-If you encounter any issues, please let us know on our [Discord](https://discord.gg/trexzactyl).
+If you encounter any issues, please let us know on our [Discord](https://discord.gg/Uf59NRyYU9).
 
