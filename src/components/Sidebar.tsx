@@ -47,6 +47,13 @@ const sidebarData = [
             { title: 'Install Tools', href: '/docs/build/install' },
             { title: 'Build Frontend', href: '/docs/build/building' },
         ]
+    },
+    {
+        title: "Wings",
+        items: [
+            { title: "Installing", href: "/docs/wings/installing" },
+            { title: "Configuring", href: "/docs/wings/configure" },
+        ]
     }
 ];
 
