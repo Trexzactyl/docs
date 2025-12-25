@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    /* Inter/Outfit fonts are handled via Next.js Font in layout.tsx */
+  }
+}
+
+@layer utilities {
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Scrollbar and Selection */
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: #ddd6fe;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Typography refinements (Tailwind 4 uses @layer for prose overrides usually) */
+@layer components {
+  .prose {
+    --tw-prose-body: #e2e2e2;
+    --tw-prose-headings: #ffffff;
+    --tw-prose-links: #a78bfa;
+    --tw-prose-bold: #ffffff;
+    --tw-prose-counters: #a1a1aa;
+    --tw-prose-bullets: #3f3f46;
+    --tw-prose-hr: #27272a;
+    --tw-prose-quotes: #f4f4f5;
+    --tw-prose-quote-borders: #a78bfa;
+    --tw-prose-captions: #a1a1aa;
+    --tw-prose-code: #c4b5fd;
+    --tw-prose-pre-code: #e4e4e7;
+    --tw-prose-pre-bg: #18181b;
+    --tw-prose-th-borders: #3f3f46;
+    --tw-prose-td-borders: #27272a;
+  }
+}
