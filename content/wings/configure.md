@@ -2,33 +2,15 @@
 
 ***
 
-## Configure
+## Linux (Bash)
 
-Once you have installed Wings, you need to link it to your Trexzactyl Panel.
+### 1. Configure
 
-1. Go to your Panel's Administrative view.
-2. Select **Nodes** from the sidebar and click **Create New**.
-3. After creating the node, click the **Configuration** tab.
-4. Copy the code block content and paste it into a new file on your node: `/etc/trexzactyl/config.yml`.
+Paste your node configuration into `/etc/trexzactyl/config.yml`.
 
-Alternatively, use the **Generate Token** button to get a auto-configuration command.
+### 2. Daemonize (systemd)
 
-> **Important:**
-> When your Panel is using SSL, Wings **must** also have a valid SSL certificate for its FQDN.
-
-## Starting Wings
-
-To start Wings in debug mode and verify everything is working:
-
-```bash
-sudo wings --debug
-```
-
-Once confirmed, stop it with `CTRL+C` and proceed to daemonize it.
-
-## Daemonizing (using systemd)
-
-Create a systemd service file at `/etc/systemd/system/wings.service`:
+Create `/etc/systemd/system/wings.service`:
 
 ```ini
 [Unit]
@@ -52,8 +34,31 @@ RestartSec=5s
 WantedBy=multi-user.target
 ```
 
-Reload systemd and start Wings:
-
 ```bash
 sudo systemctl enable --now wings
 ```
+
+***
+
+## Windows (PowerShell)
+
+### 1. Configure
+
+Paste your node configuration into `C:\trexzactyl\config.yml`.
+
+### 2. Running Wings
+
+You can run Wings directly in a PowerShell window:
+
+```powershell
+Set-Location -Path "C:\trexzactyl"
+.\wings.exe --debug
+```
+
+### 3. Daemonize (NSSM)
+
+To run Wings as a service on Windows, use **NSSM**:
+
+1. Run `nssm install TrexzactylWings`.
+2. Set Path to `C:\trexzactyl\wings.exe`.
+3. Set Startup directory to `C:\trexzactyl`.

@@ -1,26 +1,31 @@
 # Database Setup
 ***
-In order for the Panel to get and set data, we'll need a database.
-This is where all the information about the Panel is stored.
-In this case, we're using MySQL - although Amazon Lambda and other
-database services are also viable options. 
+In order for the Panel to get and set data, we'll need a database. This is where all the information about the Panel is stored.
 
-> **Tip:**
-One thing you could do to further secure and scale the Panel is to have a 
-separate VPS or server for databasing. This could be beneficial down the 
-line for things like multi-cluster deployments and load balancing databases.
+## MySQL / MariaDB Setup
 
-***
-### Create database
-The following commands work on both Linux and Windows (using MySQL/MariaDB CLI).
+The SQL commands below are identical for both Linux and Windows.
+
+### 1. Access the Database CLI
+
+**On Linux:**
+```bash
+sudo mysql -u root -p
+```
+
+**On Windows (PowerShell):**
+```powershell
+mysql.exe -u root -p
+```
+
+### 2. Create User and Database
 
 ```sql
-mysql -u root -p
-
 # Remember to change 'yourPassword' below to be a unique password
 CREATE USER 'trexzactyl'@'127.0.0.1' IDENTIFIED BY 'yourPassword';
 CREATE DATABASE panel;
 GRANT ALL PRIVILEGES ON panel.* TO 'trexzactyl'@'127.0.0.1' WITH GRANT OPTION;
-exit
+FLUSH PRIVILEGES;
+EXIT;
 ```
 

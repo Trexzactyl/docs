@@ -2,28 +2,41 @@
 
 ***
 
-### Create Directory
+## Linux (Bash)
 
-The first step in this process is to create the folder where the 
-panel will run and then move ourselves into that newly created folder. 
-Below is an example of how to perform this operation.
+### Create Directory
 
 ```bash
 mkdir -p /var/www/trexzactyl
 cd /var/www/trexzactyl
 ```
 
-***
-
-### Download Panel
-
-Once you have entered this directory, you can download the latest release to your machine.
-Then, you can extract it and assign permissions. We assign permissions
-to the `storage/*` and `bootstrap/cache` directories in order to allow the site to cache objects and load faster.
+### Download & Extract
 
 ```bash
 curl -Lo panel.tar.gz https://github.com/trexzactyl/trexzactyl/releases/latest/download/panel.tar.gz
 tar -xzvf panel.tar.gz
 chmod -R 755 storage/* bootstrap/cache/
+```
+
+***
+
+## Windows (PowerShell)
+
+### Create Directory
+
+```powershell
+New-Item -Path "C:\trexzactyl" -ItemType Directory
+Set-Location -Path "C:\trexzactyl"
+```
+
+### Download & Extract
+
+```powershell
+Invoke-WebRequest -Uri "https://github.com/trexzactyl/trexzactyl/releases/latest/download/panel.tar.gz" -OutFile "panel.tar.gz"
+tar -xzvf panel.tar.gz
+# No chmod needed on Windows, but ensure the webserver user has write access to storage and bootstrap/cache
+icacls storage /grant "IIS_IUSRS:(OI)(CI)F" /T
+icacls bootstrap/cache /grant "IIS_IUSRS:(OI)(CI)F" /T
 ```
 

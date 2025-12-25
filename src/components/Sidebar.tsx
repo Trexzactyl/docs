@@ -27,6 +27,13 @@ const sidebarData = [
         ]
     },
     {
+        title: "Wings",
+        items: [
+            { title: "Installing", href: "/docs/wings/installing" },
+            { title: "Configuring", href: "/docs/wings/configure" },
+        ]
+    },
+    {
         title: 'Updating',
         items: [
             { title: 'Manual Update', href: '/docs/panel/updating/manual' },
@@ -48,13 +55,6 @@ const sidebarData = [
             { title: 'Build Frontend', href: '/docs/build/building' },
         ]
     },
-    {
-        title: "Wings",
-        items: [
-            { title: "Installing", href: "/docs/wings/installing" },
-            { title: "Configuring", href: "/docs/wings/configure" },
-        ]
-    }
 ];
 
 export function Sidebar({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
