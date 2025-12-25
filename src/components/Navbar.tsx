@@ -13,8 +13,9 @@ export function Navbar({ onToggleSidebar }: { onToggleSidebar: () => void }) {
                 >
                     <Menu className="w-6 h-6" />
                 </button>
-                <Link href="/" className="text-xl font-bold text-white hover:text-primary-400 transition-colors">
-                    Trexzactyl
+                <Link href="/" className="flex items-center gap-2 text-xl font-bold text-white hover:text-primary-400 transition-colors">
+                    <img src="/icon.png" alt="Logo" className="w-8 h-8 rounded-lg shadow-lg shadow-primary-500/20" />
+                    <span>Trexzactyl</span>
                 </Link>
                 <span className="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white/70">v1.0</span>
             </div>

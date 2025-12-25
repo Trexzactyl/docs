@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: "Trexzactyl Documentation",
   description: "Modern documentation for Trexzactyl Panel",
   icons: {
-    icon: "/favicon.png",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 

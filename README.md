@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trexzactyl Documentation
 
-## Getting Started
+Welcome to the official documentation for **Trexzactyl**, the future of game server management. This project is a complete modernization of our documentation system, designed for performance, clarity, and a premium user experience.
 
-First, run the development server:
+## ✨ Features
+
+- **Next.js 16**: Built with the latest App Router for lightning-fast navigation.
+- **MDX Powered**: Dynamic documentation rendering with full Markdown support.
+- **Premium UI**: Modern dark theme with glassmorphism and responsive design.
+- **Bun Runtime**: Optimized for the latest JavaScript runtime for faster builds.
+- **Mobile First**: Fully optimized for desktops, tablets, and mobile devices.
+
+## 🚀 Getting Started
+
+Ensure you have [Bun](https://bun.sh) installed on your system.
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start the dev server
+bun run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to view the documentation locally.
 
-## Learn More
+## 🛠 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Content**: [MDX](https://mdxjs.com/)
+- **Runtime**: [Bun](https://bun.sh/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Main Website**: [trexz.xyz](https://trexz.xyz)
+- **Discord**: [Join our community](https://discord.gg/Uf59NRyYU9)
+- **GitHub**: [Trexzactyl Organization](https://github.com/trexzactyl)
